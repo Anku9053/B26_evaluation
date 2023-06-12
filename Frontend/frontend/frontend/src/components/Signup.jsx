@@ -41,7 +41,17 @@ const Signup = () => {
 
     }
   return (
-    <div>Signup</div>
+    <div>
+    <h3>Registation form</h3>
+    <input type="text"  value={name} onChange={(e)=>setname(e.target.value)} placeholder=''/>
+    <input type="text" value={email} onChange={(e)=>setemail(e.target.value)} placeholder=''/>
+    <input type="text" value={gender} onChange={(e)=>setgender(e.target.value)} placeholder=''/>
+    <input type="text" value={password} onChange={(e)=>setpassword(e.target.value)} placeholder=''/>
+    <input type="text" value={age} onChange={(e)=>setage(e.target.value)} placeholder=''/>
+    <input type="text" value={city} onChange={(e)=>setcity(e.target.value)} placeholder=''/>
+    <input type="text" value={ismarried} onChange={(e)=>setismarried(e.target.value)} placeholder=''/>
+    <button onClick={handlesubmmit}>Sign Up</button>
+    </div>
   )
 }
 
